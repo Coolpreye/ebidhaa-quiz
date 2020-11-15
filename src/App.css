@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-image: url(./images/header-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 1em;
+    height: 90vh;
+}
+
+/* navbar styles */
+.nav {
+    padding: .5em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.menu {
+    margin-top: .4em;
+}
+
+.logo {
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.menu-icon {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.signin a, .drop-menu a {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: .4em 1.4em;
+    border-radius: 5px;
+}
+
+.drop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .signin {
+        margin-top: 1.8em;
+        display: none;
+    }
+
+    .logo i {
+        font-size: 10px;
+    }
+
+    .logo span {
+        font-size: .7rem;
+    }
+
+    .menu-icon {
+        width: 8px;
+        height: 8px;
+        margin-bottom: .4em;
+        display: inline;
+    }
+
+    .drop-menu a {
+        padding: .4em .8em;
+        font-size: .8rem;
+    }
+}

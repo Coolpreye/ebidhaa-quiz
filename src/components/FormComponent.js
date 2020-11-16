@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FormComponent = () => {
+export const FormComponent = ({ showModal, setShowModal }) => {
     return (
         <React.Fragment>
             <div className="text-form container">
@@ -33,7 +33,7 @@ export const FormComponent = () => {
                                 <i className="material-icons">expand_more</i>
                             </div>
                         </div>
-                        <button type="submit">Get Food</button>
+                        <button onClick={() => setShowModal(!showModal)} type="submit">Get Food</button>
                     </div>
                 </form>
                 <div className="form-under-text">

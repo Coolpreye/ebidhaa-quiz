@@ -17,6 +17,10 @@
     margin: 0 auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 .jumbotron {
     background-image: url(./images/header-img.png);
     background-repeat: no-repeat;
@@ -515,6 +519,111 @@ button {
     color: var(--primary-color);
     font-size: 1.3rem;
 }
+
+/* modal styles */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4)
+}
+
+.overall {
+    display: flex;
+    width: 80%;
+    margin: 15.5em auto;
+}
+
+.modal-content {
+    background-color: var(--secondary-color);
+}
+
+.modal-food-note {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.modal-food-name {
+    color: var(--primary-color);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-food-text {
+    color: var(--primary-color);
+    font-weight: 300;
+    width: 90%;
+    margin: 1em auto;
+    font-size: .8rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .4em;
+    width: 90%;
+    margin: .6em auto;
+}
+
+.modal-footer p {
+    color: var(--primary-color)
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter i {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 .5em 0 .5em;
+}
+
+.modal-form {
+    background-color: var(--primary-color);
+    padding: 3em;
+}
+
+.modal-food {
+    background-image: url(./images/main-food.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.modal-form p {
+    width: 100%;
+    margin-top: 1em auto;
+    font-weight: 500;
+    text-align: center
+}
+
+.modal-form form {
+    margin-top: 13em;
+}
+
+.modal-form1 {
+    border: 1px solid var(--secondary-color);
+    width: 100%;
+}
+
+.modal-button {
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 0;
+}
+
+
 
 
 

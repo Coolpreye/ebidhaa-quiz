@@ -3,9 +3,9 @@ import React from 'react';
 export const FormComponent = () => {
     return (
         <React.Fragment>
-            <div className="text-form">
+            <div className="text-form container">
                 <div className="header-text">
-                    <p>What are you eating today?</p>
+                    <p>What are you eating Today?</p>
                 </div>
                 <form className="header-form">
                     <div className="form-inputs">

@@ -41,7 +41,7 @@
 }
 
 .menu {
-    margin-top: .4em;
+    margin-top: -.5em;
 }
 
 .logo {
@@ -62,7 +62,6 @@
     height: 15px;
     width: 15px;
     cursor: pointer;
-    display: none;
 }
 
 .signin a, .drop-menu a {
@@ -103,6 +102,10 @@
         font-size: .7rem;
     }
 
+    .menu {
+        margin-top: .4em;
+    }
+
     .menu-icon {
         width: 8px;
         height: 8px;
@@ -115,3 +118,403 @@
         font-size: .8rem;
     }
 }
+
+/* header form styles */
+.text-form {
+    margin-top: 8em;
+}
+
+.header-text p {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.header-form {
+    margin-top: 1em;
+}
+
+.form-inputs {
+    display: flex;
+}
+
+.form1, .form2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 40px;
+    padding: .3em 1.2em .2em 1.2em;
+    width: 30%;
+}
+
+button {
+    height: 40px;
+    margin-left: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    border: none;
+    padding: .4em 1.2em;
+}
+
+.form-icon i {
+    font-size: .8rem;
+}
+
+.form1 input, .form2 input {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    margin-left: .4em;
+}
+
+.form2 {
+    margin-left: 1em;
+    width: 15%;
+}
+
+@media screen and (max-width: 1170px) {
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .form1 {
+        width: 35%;
+    }
+
+    .form2 {
+        width: 35%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    button {
+        width: 35%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+   .form1, .form2, button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .form1, .form2, button {
+         width: 60%;
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+    .form1, .form2, button {
+         width: 70%;
+     }
+ }
+
+ @media screen and (max-width: 500px) {
+    .form1, .form2, button {
+         width: 75%;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+    .form1, .form2, button {
+         width: 100%;
+     }
+
+     .header-text p {
+        text-align: center;
+    }
+ }
+
+/* popular styles */
+.popular {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-text p {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.buttons i {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.forward {
+    margin-left: .6em;
+}
+
+@media screen and (max-width: 460px) {
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .buttons i {
+        padding: .2em;
+    }
+}
+
+.food-cards {
+    margin-top: 2em;
+    margin-left: 4em;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.food-card {
+    width: 30%;
+    flex: 0 0 auto;
+}
+
+.food-cards img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.food-left {
+    margin-left: .8em;
+}
+
+.food-name {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: .4em;
+}
+
+.food-note {
+    font-weight: 300;
+    width: 90%;
+    margin-top: .4em;
+    font-size: 1rem;
+}
+
+.action {
+    margin-top: .4em;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: .4em 1.4em;
+    width: 70%;
+    text-align: center;
+}
+
+/* categories styles */
+.categories {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.intro-text a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.food-imgs {
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+.food-img {
+    width: 30%;
+}
+
+.food-img img {
+    width: 100%;
+    background-color: var(--secondary-color);
+    opacity: 3;
+    border-radius: 16px;
+}
+
+.food-img p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: -6.5em;
+    margin-left: 5em;
+    color: var(--primary-color);
+}
+
+.food-img .breakfast {
+    margin-left: 2.5em;
+}
+
+/* stores styles */
+.stores {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10em;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.app {
+    display: flex;
+}
+
+.app i {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: .5em .6em .009em .6em;
+}
+
+.app p {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 1em;
+}
+
+.app-stores {
+    display: flex;
+    margin-left: 2em;
+}
+
+.app-store {
+    margin-left: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: .2em 1.3em;
+    display: flex;
+}
+
+.app-store-logo {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    margin-top: .4em;
+}
+
+.app-store-details {
+    margin-left: 1em;
+}
+
+.app-store-details small, .app-store-details p {
+    color: var(--primary-color);
+}
+
+.app-store-details small {
+    font-size: .6rem;
+}
+
+/* offer styles */
+.offers {
+    margin-left: 5em;
+    margin-top: 2em;
+}
+
+.first-text {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.offer-imgs {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: .8em;
+    scrollbar-width: none;
+}
+
+.offer-img {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.offer-img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 40px;
+    background-color: var(--secondary-color);
+    opacity: 3;
+}
+
+.offer-img p {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 9em;
+    margin-left: 2em;
+    width: 30%;
+}
+
+/* footer styles */
+
+.footer {
+    margin-top: 6em;
+    background: var(--secondary-color);
+    padding: 2em 0;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.footer-store {
+    background-color: var(--primary-color);
+}
+
+.footer-store-details p, .footer-store-details small {
+    color: var(--secondary-color);
+}
+
+.footer-store-logo {
+    background-color: var(--secondary-color);
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.second-row p {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: .8rem;
+    margin-left: .5em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: .8em;
+}
+
+.social-icons a i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+
+
